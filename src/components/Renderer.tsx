@@ -1,15 +1,17 @@
-import { Stage, Container, Text } from '@pixi/react'
+import { Stage } from "@pixi/react";
+import {MainWrapper} from "../core/MainWrapper";
 
 export const Renderer = () => {
-
   //The vision is to have this be our main component to handle all of our PIXI related logic
   //The logic itself will be stored within /core
 
+  //TODO: detect live resizes and resize the canvas element accordingly
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+
   return (
-    <Stage>
-      <Container x={400} y={330}>
-        <Text text="yo" anchor={{x:0.5, y: 0.5}}/>
-      </Container>
+    <Stage width={width} height={height}>
+      <MainWrapper/>
     </Stage>
-  )
-}
+  );
+};

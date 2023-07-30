@@ -1,0 +1,7 @@
+body {
+	/* Fill whole screen with no margin*/
+	margin: 0px;
+	/* We want to avoid scrolling on this page*/
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
