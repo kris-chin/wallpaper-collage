@@ -7,15 +7,18 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 100 --fix",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tauri": "tauri"
   },
   "dependencies": {
     "@pixi/react": "^7.1.0",
     "pixi.js": "^7.2.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@tauri-apps/api": "^1.4.0"
   },
   "devDependencies": {
+    "@tauri-apps/cli": "^1.4.0",
     "@types/pixi.js": "^5.0.0",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
